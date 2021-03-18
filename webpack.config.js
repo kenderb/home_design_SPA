@@ -9,7 +9,13 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '',
   },
-  mode: 'production',
+  mode: 'development',
+  devServer: {
+    contentBase: './dist',
+    host: 'localhost',
+    hot: true,
+    port: 3000,
+  },
   module: {
     rules: [
       {
