@@ -1,4 +1,5 @@
 import './styles/main.scss';
+import ImageGrid from './imagesGrid';
 
-console.log('hello from webpack');
-console.log('hello from webpack... lola');
+const imageGrid = new ImageGrid('bicycle');
+imageGrid.render();
