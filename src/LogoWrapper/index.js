@@ -1,4 +1,5 @@
-import mainLogo from './assets/images/mainLogo.svg';
+import mainLogo from '../assets/images/mainLogo.svg';
+import './logoWrapper.scss';
 
 class LogoWrapper {
   constructor() {
@@ -12,6 +13,9 @@ class LogoWrapper {
     const pTag = document.createElement('p');
     imageTag.src = mainLogo;
     imageTag.alt = 'main Logo';
+    imageTag.classList = 'main-logo';
+    pTtitle.innerHTML = 'SNEAK';
+    pTag.innerHTML = 'CREATIVE PORTOFLIO';
     this.logoWrapper.appendChild(imageTag);
     this.logoWrapper.appendChild(fontWrapper);
     fontWrapper.appendChild(pTtitle);

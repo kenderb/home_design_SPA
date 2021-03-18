@@ -1,7 +1,7 @@
 import './styles/main.scss';
 import ImageGrid from './imagesGrid';
 import FilterList from './filterList';
-import LogoWrapper from './logoWrapper';
+import LogoWrapper from './LogoWrapper';
 
 const logoWrapper = new LogoWrapper();
 logoWrapper.render();
