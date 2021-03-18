@@ -15,7 +15,14 @@ class ImageGrid {
   }
 
   handleSuccess(response) {
-    console.log(response);
+    this.imagesWrapper.innerHTML = '';
+    response.forEach(item => {
+      const imageTag = document.createElement('img');
+      imageTag.id = item.id;
+      imageTag.src = item.urls.regular;
+      imageTag.alt = item.alt_description;
+      this.imagesWrapper.appendChild(imageTag);
+    });
   }
 
   async handleRequest() {
