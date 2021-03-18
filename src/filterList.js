@@ -6,7 +6,7 @@ class FilterList {
     this.filterArray = ['all', 'Branding', 'Web', 'Photography', 'App'];
   }
 
-  handleClick(filterName) {
+  static handleClick(filterName) {
     const filterImages = new ImageGrid(filterName);
     filterImages.render();
   }
@@ -17,7 +17,7 @@ class FilterList {
       const buttonTag = document.createElement('button');
       buttonTag.innerHTML = item;
       buttonTag.type = 'button';
-      buttonTag.onclick = () => this.handleClick(item);
+      buttonTag.onclick = () => FilterList.handleClick(item);
       listTag.appendChild(buttonTag);
       this.filterWrapper.appendChild(listTag);
     });
