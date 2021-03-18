@@ -3,6 +3,25 @@
 .main-logo {
   width: 50px;
 }
+
 .logo-wrapper {
+  line-height: 1.3em;
   align-items: center;
+  width: 16.7em;
+  justify-content: space-between;
+}
+
+.logo-title-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: $dark-gray;
+  font-weight: 600;
+  letter-spacing: 5.5px;
+}
+
+.mini-text {
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 200;
+  color: $gray;
 }

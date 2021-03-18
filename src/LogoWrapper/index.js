@@ -15,7 +15,9 @@ class LogoWrapper {
     imageTag.alt = 'main Logo';
     imageTag.classList = 'main-logo';
     pTtitle.innerHTML = 'SNEAK';
+    pTtitle.classList = 'logo-title-text';
     pTag.innerHTML = 'CREATIVE PORTOFLIO';
+    pTag.classList = 'mini-text';
     this.logoWrapper.appendChild(imageTag);
     this.logoWrapper.appendChild(fontWrapper);
     fontWrapper.appendChild(pTtitle);
