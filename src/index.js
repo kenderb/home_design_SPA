@@ -5,6 +5,7 @@ import LogoWrapper from './LogoWrapper';
 import HamburgerButton from './HamburgerButton';
 import { createFourBlocksIcon, createTwoBlocksIcon } from './filterIcons/iconFilters';
 import createSocialMediaIcons from './socialMediaIcons';
+import createSearcIcon from './searchIcon';
 
 const hamburgerButton = new HamburgerButton();
 hamburgerButton.render();
@@ -18,6 +19,7 @@ imageGrid.render();
 const generateFilters = new FilterList();
 generateFilters.render();
 
+createSearcIcon();
 createFourBlocksIcon();
 createTwoBlocksIcon();
 createSocialMediaIcons();

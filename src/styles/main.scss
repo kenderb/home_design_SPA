@@ -41,6 +41,7 @@ h1, h2 {
   position: sticky;
   top: 0;
   background-color: white;
+  justify-content: space-around;
 }
 
 .nav-menu {
@@ -80,9 +81,12 @@ h1, h2 {
 
 .first-section {
   background-color: $primary-color;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   line-height: 1.5em;
-  padding: 1.1em;
+  padding: 3em 1.1em;
   color: white;
   h1 {
     width: 15em;
