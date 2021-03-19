@@ -2,6 +2,10 @@ import './styles/main.scss';
 import ImageGrid from './imagesGrid';
 import FilterList from './filterList';
 import LogoWrapper from './LogoWrapper';
+import HamburgerButton from './HamburgerButton';
+
+const hamburgerButton = new HamburgerButton();
+hamburgerButton.render();
 
 const logoWrapper = new LogoWrapper();
 logoWrapper.render();
