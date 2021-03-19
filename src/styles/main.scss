@@ -102,3 +102,15 @@ h1, h2 {
     margin-top: 1.3em;
   }
 }
+
+.license-text {
+  margin-top: 2em;
+  text-align: center;
+  color: $dark-gray;
+  letter-spacing: 1px;
+  span {
+    color: $primary-color;
+    font-weight: 600;
+  }
+}
+

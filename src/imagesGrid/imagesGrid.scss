@@ -1,0 +1,19 @@
+@import '../styles/colors';
+
+.images-wrapper {
+  margin: 2px;
+}
+.images-grid {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-more-button {
+  width: 11em;
+  padding: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+}

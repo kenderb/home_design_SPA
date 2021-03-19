@@ -1,4 +1,5 @@
-import unsplash from './api/unspalsh';
+import unsplash from '../api/unspalsh';
+import './imagesGrid.scss';
 
 class ImageGrid {
   constructor(imagesName) {
