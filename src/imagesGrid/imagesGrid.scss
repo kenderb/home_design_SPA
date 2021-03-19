@@ -29,4 +29,8 @@
   .images-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+  .show-more-button {
+    letter-spacing: 2.5px;
+    margin-top: 3em;
+  }
 }

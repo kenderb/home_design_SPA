@@ -5,15 +5,28 @@
   margin-top: 1em;
   list-style: none;
   justify-content: center;
+  
   button {
     font-size: 1em;
     padding: 0.5em;
     border: none;
     background-color: transparent;
     text-transform: capitalize;
+    color: $dark-gray;
   }
   .active-button {
     color: white;
     background-color: $primary-color-dark;
+  }
+}
+
+@media screen and (min-width: 768px) {  
+  .button-list-wrapper {
+    margin-bottom: 4em;
+    button {
+      letter-spacing: 3px;
+      padding: 0.5em 1.5em;
+      font-size: 0.9em;
+    }
   }
 }
