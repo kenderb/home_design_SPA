@@ -19,7 +19,6 @@
 ## Live Demo
 
 [Live version](https://affectionate-curie-c4d0b7.netlify.app/)
-
 ## Prerequisites
 
 node: v12.19.0
