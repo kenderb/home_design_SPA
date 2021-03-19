@@ -22,6 +22,7 @@ class ImageGrid {
       imageTag.id = item.id;
       imageTag.src = item.urls.regular;
       imageTag.alt = item.alt_description;
+      imageTag.style.gridRowEnd = `span ${Math.ceil(imageTag.height / 50)}`;
       this.imagesWrapper.appendChild(imageTag);
     });
   }
