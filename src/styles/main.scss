@@ -144,4 +144,21 @@ h1, h2 {
     width: 0.5em;
     margin: 0;
   }
+  .first-section {
+    letter-spacing: 2px;
+    padding: 6em 1.1em;
+    h1 {
+      width: 20em;
+      letter-spacing: 4px;
+      font-size: 1.7em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    button {
+      padding: 0.8em 2em;
+      font-size: 0.55em;
+      margin-top: 3em;
+    }
+  }
 }
