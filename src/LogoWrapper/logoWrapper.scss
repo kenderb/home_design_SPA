@@ -1,27 +1,27 @@
 @import '../styles/colors';
 
 .main-logo {
-  width: 50px;
+  width: 35px;
+  margin-right: 1em;
 }
 
 .logo-wrapper {
   line-height: 1.3em;
   align-items: center;
   width: 16.7em;
-  justify-content: space-between;
 }
 
 .logo-title-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.2em;
   color: $dark-gray;
   font-weight: 600;
-  letter-spacing: 5.5px;
+  letter-spacing: 5px;
 }
 
 .mini-text {
-  letter-spacing: 3px;
-  font-size: 13px;
+  letter-spacing: 2px;
+  font-size: 10px;
   font-weight: 200;
   color: $gray;
 }

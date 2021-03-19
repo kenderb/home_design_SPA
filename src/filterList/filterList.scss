@@ -1,0 +1,18 @@
+@import '../styles/colors';
+
+.button-list-wrapper {
+  margin-bottom: 1em;
+  list-style: none;
+  justify-content: center;
+  button {
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    background-color: transparent;
+    text-transform: capitalize;
+  }
+  .active-button {
+    color: white;
+    background-color: $primary-color;
+  }
+}

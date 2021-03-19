@@ -1,0 +1,14 @@
+.filter-icon {
+  width: 28px;
+  border: none;
+  background-color: transparent;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  button {
+    margin: 0.2em;
+    padding: 5px;
+  }
+}
