@@ -9,11 +9,14 @@ class HamburgerButton {
   static handleClick() {
     const navMenu = document.querySelector('#nav-menu');
     navMenu.classList.toggle('hidden');
-    console.log('hi');
   }
 
   render() {
+    const closeButton = document.querySelector('#close-button');
+    const searchButton = document.querySelector('#search-button');
     const imageTag = document.createElement('img');
+    searchButton.onclick = () => HamburgerButton.handleClick();
+    closeButton.onclick = () => HamburgerButton.handleClick();
     imageTag.src = hamburgerIcon;
     imageTag.alt = 'hamburger icon';
     this.hamburgerButton.appendChild(imageTag);
