@@ -4,6 +4,7 @@ import FilterList from './filterList';
 import LogoWrapper from './LogoWrapper';
 import HamburgerButton from './HamburgerButton';
 import { createFourBlocksIcon, createTwoBlocksIcon } from './filterIcons/iconFilters';
+import createSocialMediaIcons from './socialMediaIcons';
 
 const hamburgerButton = new HamburgerButton();
 hamburgerButton.render();
@@ -19,3 +20,4 @@ generateFilters.render();
 
 createFourBlocksIcon();
 createTwoBlocksIcon();
+createSocialMediaIcons();
