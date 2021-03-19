@@ -67,15 +67,17 @@ h1, h2 {
   ul {
     list-style: none;
   }
-  &__li {
-    padding: 0.4em;
-  }
 
   a {
     letter-spacing: 2px;
     text-transform:capitalize;
     color: black;
     text-decoration: none;
+    padding: 0.4em 1em;
+    &:active {
+      background-color: $primary-color-dark;
+      color: white;
+    }
   }
 }
 
@@ -118,3 +120,28 @@ h1, h2 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    transform: translate(0);
+    padding: 0.5em;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  .close-button {
+    display: none;
+  }
+  .search-button {
+    width: 0.5em;
+    margin: 0;
+  }
+}
