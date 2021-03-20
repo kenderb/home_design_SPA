@@ -10,6 +10,8 @@ class FilterList {
   static handleClick(event, filterName, nameList) {
     const filterImages = new ImageGrid(filterName);
     filterImages.render();
+    filterImages.setImageGap();
+
     event.target.classList.toggle('active-button');
     nameList.forEach(element => {
       if (element !== event.target.name) {

@@ -5,6 +5,7 @@ class ImageGrid {
   constructor(imagesName) {
     this.imagesName = imagesName;
     this.imagesWrapper = document.querySelector('#images-wrapper');
+    this.wrapperchildNodes = [];
   }
 
   handleLoading() {
@@ -20,9 +21,9 @@ class ImageGrid {
     response.forEach(item => {
       const imageTag = document.createElement('img');
       imageTag.id = item.id;
+      this.wrapperchildNodes.push(item.id);
       imageTag.src = item.urls.regular;
       imageTag.alt = item.alt_description;
-      imageTag.style.gridRowEnd = `span ${Math.ceil(imageTag.height / 50)}`;
       this.imagesWrapper.appendChild(imageTag);
     });
   }
@@ -39,6 +40,15 @@ class ImageGrid {
     } catch (error) {
       this.handleError(error);
     }
+  }
+
+  setImageGap() {
+    setTimeout(() => {
+      this.wrapperchildNodes.forEach(imageId => {
+        const imageTag = document.getElementById(imageId);
+        imageTag.style.gridRowEnd = `span ${Math.ceil(imageTag.height / 90)}`;
+      });
+    }, 200);
   }
 
   render() {

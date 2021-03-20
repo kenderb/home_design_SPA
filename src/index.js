@@ -15,6 +15,7 @@ logoWrapper.render();
 
 const imageGrid = new ImageGrid('all');
 imageGrid.render();
+imageGrid.setImageGap();
 
 const generateFilters = new FilterList();
 generateFilters.render();
