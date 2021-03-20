@@ -46,7 +46,7 @@ class ImageGrid {
     setTimeout(() => {
       this.wrapperchildNodes.forEach(imageId => {
         const imageTag = document.getElementById(imageId);
-        imageTag.style.gridRowEnd = `span ${Math.ceil(imageTag.height / 90)}`;
+        imageTag.style.gridRowEnd = `span ${Math.ceil(imageTag.height / 65)}`;
       });
     }, 200);
   }
